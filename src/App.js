@@ -1,9 +1,10 @@
 import React, { useState } from "react"
 import { useSelector } from "react-redux"
-import 'react-html5video/dist/styles.css'
+// import 'react-html5video/dist/styles.css'
 import "./App.css"
 import sidebutton from "./sidebutton.png"
 import { hover } from "@testing-library/user-event/dist/hover"
+import ReactPlayer from 'react-player'
 
 const homeparentstyle={
   height:"100vh",
@@ -22,8 +23,8 @@ const sidebuttonstyle={
   height:"60px",
   borderRadius:"8px",
   position: "absolute",
-  top: "370px",
-  left: "150px",
+  top: "480px",
+  left: "80px",
   border: "1px solid #000000",
   zIndex: '0',
   cursor:"pointer"
@@ -90,7 +91,8 @@ function App() {
 
     <div style={homeparentstyle} >
       <div>
-        <video src={videosource} controls autoPlay loop  style={videostyle}/>
+       
+        <ReactPlayer url={videosource} control width={800} height="100%"/>
         <img src={sidebutton}  style={sidebuttonstyle}  />
       </div>
       {flag ? <div style={childstyle2}>
