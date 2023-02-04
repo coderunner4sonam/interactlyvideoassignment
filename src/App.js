@@ -60,7 +60,10 @@ const button={
   height:"30px",
   borderRadius:"50px",
   backgroundColor:"#7D00FE",
-  cursor:"pointer"
+  cursor:"pointer",
+  display:"flex",
+  justifyContent:"center",
+  alignItems:"center"
 }
 
 const buttonstyle2={
@@ -73,7 +76,8 @@ const buttonstyle2={
   backgroundColor:"#7D00FE",
   color:"white",
   textAlign:"center",
-  cursor:"pointer"
+  cursor:"pointer",
+ 
 }
 function App() {
   const state=useSelector(state=>state)
