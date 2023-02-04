@@ -26,7 +26,7 @@ const sidebuttonstyle={
   left: "150px",
   border: "1px solid #000000",
   zIndex: '0',
-
+  cursor:"pointer"
 }
 
 const childstyle2={
@@ -40,7 +40,8 @@ const buttonstyle1={
   marginLeft:"100px",
   borderRadius:"33px",
   border: "none",
-  backgroundColor:"rgb(231,231,231)"
+  backgroundColor:"rgb(231,231,231)",
+  cursor:"pointer"
 }
 
 const buttonstyle={
@@ -50,14 +51,16 @@ const buttonstyle={
   marginLeft:"100px",
   borderRadius:"33px",
   border: "none",
-  backgroundColor:"rgb(231,231,231)"
+  backgroundColor:"rgb(231,231,231)",
+  cursor:"pointer"
 }
 const button={
   margin:"-5px 45px -22px 14px",
   width:"30px",
   height:"30px",
   borderRadius:"50px",
-  backgroundColor:"#7D00FE"
+  backgroundColor:"#7D00FE",
+  cursor:"pointer"
 }
 
 const buttonstyle2={
@@ -69,7 +72,8 @@ const buttonstyle2={
   border: "none",
   backgroundColor:"#7D00FE",
   color:"white",
-  textAlign:"center"
+  textAlign:"center",
+  cursor:"pointer"
 }
 function App() {
   const state=useSelector(state=>state)
